@@ -1,0 +1,3 @@
+INSERT INTO products (productNumber, productName, productDescription, price) VALUES ('prod111', 'Кофемашина', 'Убодная и стильная кофемашина. Сделает классный кофе вам и вашим близким', 10000.0)
+INSERT INTO products (productNumber, productName, productDescription, price) VALUES ('prod112', 'Чайник', 'Убодный и стильный чайник. Сделает вкусный чай для вас', 5000.0)
+INSERT INTO products (productNumber, productName, productDescription, price) VALUES ('prod113', 'Пылесос', 'Убодный и стильный пылесос. Сделает чистым ваш дом', 8000.0)

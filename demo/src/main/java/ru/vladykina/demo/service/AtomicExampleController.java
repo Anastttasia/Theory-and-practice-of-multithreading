@@ -1,8 +1,8 @@
-package ru.moskalev.demo.service;
+package ru.vladykina.demo.service;
 
 import org.springframework.stereotype.Service;
-import ru.moskalev.demo.domain.BankAccount;
-import ru.moskalev.demo.repository.BankAccountRepository;
+import ru.vladykina.demo.domain.BankAccount;
+import ru.vladykina.demo.repository.BankAccountRepository;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;

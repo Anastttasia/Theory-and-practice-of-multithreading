@@ -1,0 +1,22 @@
+package ru.vladykina.demo.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import ru.vladykina.demo.domain.ClientFullInfo;
+import ru.vladykina.demo.service.ClientAggregationService;
+
+import java.util.List;
+
+@RestController
+@RequiredArgsConstructor
+public class ClientAggregationController {
+    private final ClientAggregationService aggregationService;
+
+    @GetMapping("/clients-full")
+    public ResponseEntity<List<ClientFullInfo>> getClientsFull() {
+        List<ClientFullInfo> result = aggregationService.getFullClientInfoAsync();
+        return ResponseEntity.ok(result);
+    }
+}
